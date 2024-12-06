@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Name and Address</legend>
+
+        <table>
+          <!-- Question 1 -->
+          <tr>
+            <td>Do you use CiviCRM?</td>
+            <td>
+              <label
+                ><input type="radio" name="civicrm" value="yes" /> Yes</label
+              >
+              <label><input type="radio" name="civicrm" value="no" /> No</label>
+              (<a href="#">unselect</a>)
+            </td>
+          </tr>
+
+          <!-- Dropdowns -->
+          <tr>
+            <td>
+              <label for="usage">How long have you been using CiviCRM?</label>
+            </td>
+            <td>
+              <select id="usage" name="usage">
+                <option value="">- select -</option>
+                <option value="less_than_1">Less than 1 year</option>
+                <option value="1_to_3">1-3 years</option>
+                <option value="more_than_3">More than 3 years</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="cms">Which CMS do you use?</label></td>
+            <td>
+              <select id="cms" name="cms">
+                <option value="">- select -</option>
+                <option value="wordpress">WordPress</option>
+                <option value="drupal">Drupal</option>
+                <option value="joomla">Joomla</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="skills">Your skill set</label></td>
+            <td>
+              <select id="skills" name="skills">
+                <option value="">- select -</option>
+                <option value="developer">Developer</option>
+                <option value="designer">Designer</option>
+                <option value="admin">Administrator</option>
+              </select>
+            </td>
+          </tr>
+
+          <!-- Input fields -->
+          <tr>
+            <td><label for="email">Email *</label></td>
+            <td><input type="email" id="email" name="email" required /></td>
+          </tr>
+          <tr>
+            <td><label for="first-name">First Name *</label></td>
+            <td>
+              <input type="text" id="first-name" name="first-name" required />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="last-name">Last Name *</label></td>
+            <td>
+              <input type="text" id="last-name" name="last-name" required />
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td colspan="2">
+              First and last name will be shared with other visitors to the
+              site.
+            </td>
+          </tr>
+
+          <!-- Address fields -->
+          <tr>
+            <td><label for="street">Street Address (Home)</label></td>
+            <td><input type="text" id="street" name="street" /></td>
+          </tr>
+          <tr>
+            <td><label for="city">City (Home)</label></td>
+            <td><input type="text" id="city" name="city" /></td>
+          </tr>
+          <tr>
+            <td><label for="postal-code">Postal Code (Home)</label></td>
+            <td><input type="text" id="postal-code" name="postal-code" /></td>
+          </tr>
+          <tr>
+            <td><label for="country">Country (Home)</label></td>
+            <td>
+              <select id="country" name="country">
+                <option value="usa">United States</option>
+                <option value="canada">Canada</option>
+                <option value="uk">United Kingdom</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td colspan="2">
+              Your state/province and country of residence will be shared with
+              others so folks can find others in their community.
+            </td>
+          </tr>
+          <tr>
+            <td><label for="state">State (Home)</label></td>
+            <td>
+              <select id="state" name="state">
+                <option value="">- select -</option>
+                <option value="california">California</option>
+                <option value="texas">Texas</option>
+                <option value="new-york">New York</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+      <!-- Buttons -->
+      <tr>
+        <td colspan="2" style="text-align: center">
+          <button type="submit">Save</button>
+          <button type="reset">Cancel</button>
+        </td>
+      </tr>
+    </form>
+  </body>
+</html>
