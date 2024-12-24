@@ -1,0 +1,28 @@
+## CSS Topics (4 weeks)
+
+- syntex
+- background
+- color
+- font
+- text
+- height/width
+- margins
+- padding
+- flexbox
+- grid
+- display
+- position
+- z-index
+- overflow
+- align
+- pseudo-element
+- !important keyword
+- border
+- rounded
+- shadow
+- gradient
+- transition
+- transform
+- variables
+- media query
+- animations

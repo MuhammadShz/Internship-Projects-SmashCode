@@ -1,0 +1,55 @@
+*Learning Material for Beginners*  
+
+
+ *Step 01 - HTML*
+ *HTML Topics (3 Weeks)*  
+
+- *HTML Structure:*  
+  - <body>  
+  - <head>  
+  - <title>  
+
+- *Headings:*  
+  - <h1> to <h6>  
+
+- *Formatting Elements:*  
+  - <b>, <strong>, <i>, <em>, <mark>, <small>, <del>, <ins>, <sub>, <sup>, <code>, <span>, <u>
+
+- *Layout Tags:*  
+  - <div>, <section>, <main>, <article>, <header>, <footer>
+
+- *Text Elements:*  
+  - <p> (paragraph)  
+  - <pre> (preformatted text)
+
+- *Table Tags:*  
+  - All table-related tags  
+
+- *Form Tags:*  
+  - All form-related tags  
+
+- *List Tags:*  
+  - <ol> (ordered list)  
+  - <ul> (unordered list)  
+
+- *Interactive Elements:*  
+  - <a> (anchor)  
+  - <button>
+
+- *Media Elements:*  
+  - <img> (image)  
+  - <figure>  
+  - <video>  
+  - <audio>  
+  - <iframe>
+
+- *Quotation Elements:*  
+  - <blockquote>  
+  - <q>  
+  - <abbr>  
+  - <address>  
+  - <cite>  
+  - <bdo>  
+
+- *Attributes:*  
+  - class, id, src, and others  
