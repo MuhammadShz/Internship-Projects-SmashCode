@@ -1,0 +1,753 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+}
+
+/* navbar styling starts from here */
+.navbar {
+  background-color: #131921;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 5px 10px 4px;
+  width: 100%;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+}
+
+.logo img {
+  width: 120px;
+}
+
+.logo:hover {
+  outline: 1.9px solid white;
+}
+
+.delivery {
+  display: flex;
+  align-items: center;
+  padding: 8px 3px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.delivery:hover {
+  outline: 1.9px solid white;
+}
+
+.delivery a {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: white;
+  line-height: 1.3;
+}
+
+.delivery img {
+  margin-top: 10px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: white;
+  margin-left: 15px;
+  flex: 1;
+  max-width: 700px;
+}
+
+.category {
+  padding: 0.7rem 0px 0.7rem 0.7rem;
+  border: none;
+  border-right: 1px solid #ccc;
+  background-color: #e6e6e6;
+  cursor: pointer;
+}
+.category:hover {
+  background-color: #c9c8c8;
+}
+
+.search-input {
+  flex: 1;
+  padding: 0px 0.5rem;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+.search-button {
+  padding: 0.5rem 0.7rem;
+  background-color: #febd69;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  border-left: 1px solid #ccc;
+}
+
+.search-button:hover {
+  background-color: #f9ab44;
+}
+
+/* Language Selector */
+.language {
+  display: flex;
+  gap: 5px;
+  cursor: pointer;
+  align-items: center;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.language > img {
+  width: 22px;
+  height: 22px;
+}
+
+.language span {
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+/* Account Section */
+.account,
+.orders {
+  cursor: pointer;
+}
+
+.account p,
+.orders p {
+  font-size: 12px;
+  margin: 0;
+  color: #ccc;
+  /* line-height: 0.8; */
+}
+
+.account span,
+.orders span {
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Cart Section */
+.cart {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.cart img {
+  width: 40px;
+  height: 40px;
+}
+
+.cart p {
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.friend {
+  padding: 5px 10px;
+}
+
+.friend:hover {
+  outline: 1.8px solid white;
+}
+/* navbar ends here */
+
+/* semi navbar code starts from here */
+.semi-navbar {
+  background-color: #232f3e; /* Dark background color */
+  color: #fff; /* White text color */
+  padding: 10px 0; /* Top and bottom padding */
+  top: 0; /* Position at the top */
+  width: 100%;
+}
+
+.semi-navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Arrange items horizontally */
+  justify-content: flex-start; /* Align items to the right */
+}
+
+.semi-navbar li {
+  margin-left: 20px; /* Space between items */
+}
+.semi-navbar li:hover {
+  outline: 1.8px solid white;
+  outline-offset: 7px;
+}
+
+.semi-navbar a {
+  text-decoration: none;
+  color: inherit; /* Inherit text color from parent */
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  font-size: 14px;
+}
+
+/* semi nav ends here */
+
+/* main content styling starts from here */
+.bg-image {
+  background-image: url("./images/bg_image.jpg"); /* Replace with your image path */
+  background-size: cover; /* Ensures the image covers the entire div */
+  background-position: top; /* Centers the image */
+  background-size: 110%;
+  background-repeat: no-repeat;
+  width: 100%; /* Makes sure the div takes up the full width */
+  height: 50vh; /* Makes the div take up the full height of the viewport */
+}
+
+.spacing-cards {
+  display: flex;
+  width: 95%;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.c {
+  width: 300px;
+  margin: 10px auto;
+  border: 1px solid #ccc;
+  padding: 15px 5px 15px 20px;
+  background-color: white;
+  margin: 10px;
+}
+
+.c h2 {
+  margin-top: 5px;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.items {
+  display: inline-block;
+  margin-right: 10px;
+  width: 100px;
+}
+
+.items img {
+  width: 100px;
+  height: 80px;
+}
+
+.items p {
+  font-size: 0.75rem;
+  width: 140px;
+  margin: 0px 0px 30px 0px;
+}
+
+.see-more {
+  display: block;
+  margin-top: 20px;
+  color: #326ea8;
+  text-decoration: none;
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+/* footer styling starts here */
+.back-to-top {
+  text-align: center;
+  height: 10%;
+  margin: 10px 0px 0px 0px;
+  background-color: #37475a;
+  color: white;
+  padding: 10px;
+  font-size: 0.8rem;
+}
+
+.footer-container {
+  background-color: #232f3e;
+  width: 100%;
+  height: auto;
+  padding: 40px;
+}
+
+.footerlinks {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.links-section ul {
+  list-style: none;
+}
+
+.links-section a {
+  color: rgb(225, 220, 220);
+  font-size: 0.85rem;
+  text-decoration: none;
+  font: 700;
+}
+
+.links-section a:hover {
+  text-decoration: underline;
+}
+
+.links-section h4 {
+  margin-bottom: 5px;
+}
+
+/* amz footer starts here */
+.nav-footer-line {
+  border-top: 1px solid #3a4553;
+}
+.amz-footer {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  background-color: #232f3e;
+  align-items: center;
+  padding: 30px;
+}
+
+.amz-footer ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.amz-footer-image img {
+  width: 90px;
+}
+
+.amz-footer li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9rem;
+  gap: 5px;
+  color: white;
+}
+.amz-footer ul img {
+  width: 15px;
+}
+
+.amz-footer select {
+  border: none;
+  background-color: transparent;
+  color: white;
+  padding: 2px;
+}
+.amz-footer select option {
+  color: black;
+}
+.amz-footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.amz-footer li {
+  border: 1px solid gray;
+  padding: 5px 10px;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 1024px) {
+  .search-bar {
+    max-width: 600px;
+  }
+
+  .logo img {
+    width: 100px;
+  }
+
+  .delivery,
+  .language,
+  .account,
+  .orders,
+  .cart {
+    font-size: 11px;
+  }
+
+  .language > img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .cart img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .search-button {
+    padding: 0.3rem 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .category {
+    padding: 0.5rem 0px 0.5rem 0.5rem;
+  }
+
+  .search-input {
+    flex: 1;
+    padding: 0px 0.5rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .navbar {
+    padding: 5px 10px;
+  }
+
+  .logo img {
+    width: 90px;
+  }
+
+  .cart img {
+    width: 27px;
+    height: 27px;
+  }
+
+  .delivery {
+    font-size: 10px;
+  }
+
+  .delivery img {
+    width: 15px;
+  }
+
+  .search-button {
+    padding: 0.2rem 0.3rem;
+    font-size: 0.6rem;
+  }
+
+  .category {
+    padding: 0.4rem 0px 0.4rem 0.3rem;
+  }
+
+  .search-input {
+    flex: 1;
+    padding: 0px 0.5rem;
+    font-size: 0.7rem;
+  }
+  .semi-navbar li {
+    margin-left: 15px; /* Reduce space between items on screens 900px and below */
+  }
+
+  .footer-container {
+    background-color: #232f3e;
+    width: 100%;
+    height: auto;
+    padding: 40px;
+  }
+
+  .footerlinks {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .links-section ul {
+    list-style: none;
+  }
+
+  .links-section a {
+    color: rgb(225, 220, 220);
+    font-size: 0.65rem;
+    text-decoration: none;
+    font: 700;
+  }
+
+  .links-section a:hover {
+    text-decoration: underline;
+  }
+
+  .links-section h4 {
+    margin-bottom: 5px;
+    font-size: 0.6rem;
+  }
+
+  .nav-footer-line {
+    border-top: 1px solid #3a4553;
+  }
+  .amz-footer {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background-color: #232f3e;
+    align-items: center;
+    padding: 30px;
+  }
+
+  .amz-footer ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .amz-footer-image img {
+    width: 60px;
+  }
+
+  .amz-footer li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.6rem;
+    gap: 5px;
+    color: white;
+    border: 1px solid gray;
+    padding: 5px 5px;
+  }
+  .amz-footer ul img {
+    width: 10px;
+  }
+
+  .amz-footer select {
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 0.6rem;
+    padding: 1px;
+  }
+  .amz-footer select option {
+    color: black;
+  }
+  .amz-footer a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .navbar {
+    padding: 4px 8px;
+  }
+
+  .search-bar {
+    max-width: 100%;
+  }
+
+  .logo img {
+    width: 70px;
+  }
+
+  .delivery,
+  .language,
+  .account,
+  .orders,
+  .cart {
+    font-size: 9px;
+    padding-left: 2px;
+  }
+  .account p,
+  .orders p {
+    font-size: 9px;
+  }
+
+  .account span,
+  .orders span {
+    font-size: 9px;
+  }
+  .span-pk {
+    font-size: 12px !important;
+  }
+  .cart img {
+    width: 25px;
+    height: 25px;
+  }
+  .cart p {
+    font-size: 10px;
+  }
+
+  .language > img {
+    width: 15px;
+    height: 15px;
+  }
+  .language span {
+    font-size: 0.7rem;
+    font-weight: 700;
+  }
+
+  .search-button {
+    padding: 0.3rem 0.2rem;
+    font-size: 0.4rem;
+  }
+  .search-button img {
+    width: 20px;
+  }
+
+  .category {
+    padding: 0.4rem 0px 0.4rem 0.1rem;
+    font-size: 12px;
+  }
+  .search-input {
+    padding: 0px 0.3rem;
+    font-size: 0.6rem;
+  }
+  .semi-navbar a {
+    font-size: 12px; /* Reduce font size on screens 860px and below */
+  }
+}
+
+@media screen and (max-width: 685px) {
+  .navbar {
+    flex-direction: column; /* Stack navbar items vertically */
+    align-items: flex-start;
+    gap: 5px;
+    width: 100%;
+  }
+
+  .logo img {
+    width: 80px;
+  }
+
+  .delivery img {
+    width: 15px;
+  }
+
+  .search-bar {
+    display: flex;
+    flex-wrap: wrap; /* Enable wrapping for the search bar */
+    width: 100%; /* Full width */
+    margin: 0; /* Remove margins */
+    align-items: center; /* Center items */
+    gap: 5px; /* Add spacing between items */
+  }
+
+  .category {
+    flex: 0 0 60px; /* Fixed width for category dropdown */
+    padding: 0.5rem 0.2rem;
+    font-size: 0.7rem;
+    text-align: center;
+  }
+
+  .search-input {
+    flex: 1 1 auto; /* Flexible width for search input */
+    padding: 0.2rem;
+    font-size: 0.7rem;
+    min-width: 150px; /* Prevent shrinking too much */
+  }
+
+  .search-button {
+    flex: 0 0 50px; /* Fixed width for search button */
+    padding: 0.35rem;
+    font-size: 0.6rem;
+    text-align: center;
+  }
+
+  .delivery,
+  .language,
+  .account,
+  .orders,
+  .cart {
+    font-size: 10px;
+    padding-left: 2px;
+  }
+
+  .language > img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .cart img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .cart p {
+    font-size: 12px;
+  }
+
+  .account p,
+  .orders p {
+    font-size: 12px;
+  }
+
+  .account span,
+  .orders span {
+    font-size: 12px;
+  }
+
+  .span-pk {
+    font-size: 12px !important;
+  }
+  .language {
+    margin-left: 0px;
+  }
+  .semi-navbar a {
+    /* Add bottom margin for vertical stacking */
+    font-size: 10px;
+  }
+  .semi-navbar li {
+    margin-left: 10px; /* Reduce space between items on screens 900px and below */
+  }
+  .semi-navbar img {
+    width: 12px;
+  }
+  .semi-navbar ul {
+    /* Add bottom margin for vertical stacking */
+    flex-wrap: wrap;
+  }
+
+  .footer-container {
+    background-color: #232f3e;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .footerlinks {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .links-section ul {
+    list-style: none;
+  }
+
+  .links-section a {
+    color: rgb(225, 220, 220);
+    font-size: 0.55rem;
+    text-decoration: none;
+    font: 700;
+  }
+
+  .links-section a:hover {
+    text-decoration: underline;
+  }
+
+  .links-section h4 {
+    margin-bottom: 6px;
+    font-size: 0.5rem;
+  }
+}
